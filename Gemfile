@@ -54,6 +54,10 @@ group :development, :test do
 
   gem 'rspec-rails'
 
+  gem 'ffaker'
+
+  gem 'factory_bot_rails'
+
 end
 
 group :development do
@@ -73,3 +77,5 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem 'ffi', github: 'ffi/ffi', submodules: true
