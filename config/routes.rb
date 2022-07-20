@@ -5,5 +5,7 @@ Rails.application.routes.draw do
   # root "articles#index"
 
     resources :users
+    resources :weapons
+    resources :enemies, only: [:update, :destroy]
 
 end
