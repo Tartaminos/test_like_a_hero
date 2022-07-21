@@ -23,7 +23,7 @@ class EnemiesController < ApplicationController
 
   def set_enemy
     @enemy = Enemy.find(params[:id])
-  rescue ApplicationRecord::RecordNotFound => e
+  rescue ActiveRecord::RecordNotFound => e
     render json: { message: e.message }, status: :not_found
   end
 end
